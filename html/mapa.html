@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mapa com Pesquisa</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+</head>
+<body>
+
+<!-- PESQUISA -->
+<div class="search-box">
+
+    <input
+    type="text"
+    id="cidade"
+    placeholder="Pesquisar cidade ou pista...">
+
+    <button onclick="pesquisar()">
+        Buscar
+    </button>
+
+</div>
+
+<!-- MAPA -->
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

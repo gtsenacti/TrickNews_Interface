@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e66a;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.carrinho {
+    display: flex;
+    gap: 30px;
+}
+
+/* PRODUTOS */
+.produtos {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.produto-info img {
+    width: 60px;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+.preco, .subtotal {
+    color: #333;
+}
+
+.remover {
+    cursor: pointer;
+}
+
+/* RESUMO */
+.resumo {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.frete {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.frete span {
+    color: gray;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pix {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: black;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #000000   ;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

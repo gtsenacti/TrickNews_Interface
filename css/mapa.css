@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    overflow:hidden;
+}
+
+/* MAPA */
+#map{
+    height:100vh;
+    width:100%;
+}
+
+/* PESQUISA */
+.search-box{
+
+    position:absolute;
+
+    top:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:1000;
+
+    width:90%;
+    max-width:500px;
+
+    display:flex;
+    gap:10px;
+}
+
+/* INPUT */
+.search-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:15px;
+
+    background:#111;
+
+    color:white;
+
+    font-size:16px;
+
+    border:1px solid #333;
+}
+
+/* BOTÃO */
+.search-box button{
+
+    padding:15px 20px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#ffd000;
+
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* HOVER */
+.search-box button:hover{
+
+    transform:scale(1.05);
+
+    background:#ffea00;
+}
+
+/* POPUP LEAFLET */
+.leaflet-popup-content-wrapper{
+
+    background:#111;
+
+    color:white;
+
+    border-radius:15px;
+}
+
+.leaflet-popup-tip{
+
+    background:#111;
+}
